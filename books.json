@@ -1,0 +1,499 @@
+[
+ {
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "genre": "Classic",
+  "publication_year": 1813,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/PrideandPrejudice.jpg"
+ },
+ {
+  "title": "Moby-Dick",
+  "author": "Herman Melville",
+  "genre": "Classic",
+  "publication_year": 1851,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/Moby-Dick.jpg"
+ },
+ {
+  "title": "Jane Eyre",
+  "author": "Charlotte Bront",
+  "genre": "Classic",
+  "publication_year": 1847,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/JaneEyre.jpg"
+ },
+ {
+  "title": "Great Expectations",
+  "author": "Charles Dickens",
+  "genre": "Classic",
+  "publication_year": 1861,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/GreatExpectations.jpg"
+ },
+ {
+  "title": "Wuthering Heights",
+  "author": "Emily Bront",
+  "genre": "Classic",
+  "publication_year": 1847,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/WutheringHeights.jpg"
+ },
+ {
+  "title": "Anna Karenina",
+  "author": "Leo Tolstoy",
+  "genre": "Classic",
+  "publication_year": 1877,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/AnnaKarenina.jpg"
+ },
+ {
+  "title": "Dracula",
+  "author": "Bram Stoker",
+  "genre": "Classic",
+  "publication_year": 1897,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/Dracula.jpg"
+ },
+ {
+  "title": "Frankenstein",
+  "author": "Mary Shelley",
+  "genre": "Classic",
+  "publication_year": 1818,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/Frankenstein.jpg"
+ },
+ {
+  "title": "Sense and Sensibility",
+  "author": "Jane Austen",
+  "genre": "Classic",
+  "publication_year": 1811,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/SenseandSensibility.jpg"
+ },
+ {
+  "title": "The Scarlet Letter",
+  "author": "Nathaniel Hawthorne",
+  "genre": "Classic",
+  "publication_year": 1850,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheScarletLetter.jpg"
+ },
+ {
+  "title": "The Immortal Life of Henrietta Lacks",
+  "author": "Rebecca Skloot",
+  "genre": "Non-Fiction",
+  "publication_year": 2010,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheImmortalLifeofHenriettaLacks.jpg"
+ },
+ {
+  "title": "The Power of Habit",
+  "author": "Charles Duhigg",
+  "genre": "Non-Fiction",
+  "publication_year": 2012,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/ThePowerofHabit.jpg"
+ },
+ {
+  "title": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "genre": "Non-Fiction",
+  "publication_year": 2011,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/ThinkingFastandSlow.jpg"
+ },
+ {
+  "title": "Becoming",
+  "author": "Michelle Obama",
+  "genre": "Non-Fiction",
+  "publication_year": 2018,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/Becoming.jpg"
+ },
+ {
+  "title": "The Wright Brothers",
+  "author": "David McCullough",
+  "genre": "Non-Fiction",
+  "publication_year": 2015,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheWrightBrothers.jpg"
+ },
+ {
+  "title": "The Glass Castle",
+  "author": "Jeanette Walls",
+  "genre": "Non-Fiction",
+  "publication_year": 2005,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheGlassCastle.jpg"
+ },
+ {
+  "title": "To Kill a Mockingbird",
+  "author": "Harper Lee",
+  "genre": "Fiction",
+  "publication_year": 1960,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/ToKillaMockingbird.jpg"
+ },
+ {
+  "title": "One Hundred Years of Solitude",
+  "author": "Gabriel Garc\u00eda M\u00e1rquez",
+  "genre": "Fiction",
+  "publication_year": 1967,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/OneHundredYearsofSolitude.jpg"
+ },
+ {
+  "title": "The Handmaid's Tale",
+  "author": "Margaret Atwood",
+  "genre": "Fiction",
+  "publication_year": 1985,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheHandmaidsTale.jpg"
+ },
+ {
+  "title": "The Kite Runner",
+  "author": "Khaled Hosseini",
+  "genre": "Fiction",
+  "publication_year": 2003,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheKiteRunner.jpg"
+ },
+ {
+  "title": "A Peoples History of the United States",
+  "author": "Howard Zinn",
+  "genre": "History",
+  "publication_year": 1980,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/APeoplesHistoryoftheUnitedStates.jpg"
+ },
+ {
+  "title": "The Guns of August",
+  "author": "Barbara W. Tuchman",
+  "genre": "History",
+  "publication_year": 1962,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheGunsofAugust.jpg"
+ },
+ {
+  "title": "The History of the Decline and Fall of the Roman Empire",
+  "author": "Edward Gibbon",
+  "genre": "History",
+  "publication_year": 1776,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheHistoryoftheDeclineandFalloftheRomanEmpire.jpg"
+ },
+ {
+  "title": "The Devil in the White City",
+  "author": "Erik Larson",
+  "genre": "History",
+  "publication_year": 2003,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheDevilintheWhiteCity.jpg"
+ },
+ {
+  "title": "1776",
+  "author": "David McCullough",
+  "genre": "History",
+  "publication_year": 2005,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/1776.jpg"
+ },
+ {
+  "title": "The Diary of a Young Girl",
+  "author": "Anne Frank",
+  "genre": "History",
+  "publication_year": 1947,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheDiaryofaYoungGirl.jpg"
+ },
+ {
+  "title": "The Warmth of Other Suns",
+  "author": "Isabel Wilkerson",
+  "genre": "History",
+  "publication_year": 2010,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheWarmthofOtherSuns.jpg"
+ },
+ {
+  "title": "The Hiding Place",
+  "author": "Corrie ten Boom",
+  "genre": "History",
+  "publication_year": 1971,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheHidingPlace.jpg"
+ },
+ {
+  "title": "The 7 Habits of Highly Effective People",
+  "author": "Stephen R. Covey",
+  "genre": "Self-Help",
+  "publication_year": 1989,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/The7HabitsofHighlyEffectivePeople.jpg"
+ },
+ {
+  "title": "How to Win Friends and Influence People",
+  "author": "Dale Carnegie",
+  "genre": "Self-Help",
+  "publication_year": 1936,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/HowtoWinFriendsandInfluencePeople.jpg"
+ },
+ {
+  "title": "Atomic Habits",
+  "author": "James Clear",
+  "genre": "Self-Help",
+  "publication_year": 2018,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/AtomicHabits.jpg"
+ },
+ {
+  "title": "The Power of Now",
+  "author": "Eckhart Tolle",
+  "genre": "Self-Help",
+  "publication_year": 1997,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/ThePowerofNow.jpg"
+ },
+ {
+  "title": "You Are a Badass",
+  "author": "Jen Sincero",
+  "genre": "Self-Help",
+  "publication_year": 2013,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/YouAreaBadass.jpg"
+ },
+ {
+  "title": "The Four Agreements",
+  "author": "Don Miguel Ruiz",
+  "genre": "Self-Help",
+  "publication_year": 1997,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheFourAgreements.jpg"
+ },
+ {
+  "title": "Eat, Pray, Love",
+  "author": "Elizabeth Gilbert",
+  "genre": "Self-Help",
+  "publication_year": 2006,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/EatPrayLove.jpg"
+ },
+ {
+  "title": "Man's Search for Meaning",
+  "author": "Viktor E. Frankl",
+  "genre": "Self-Help",
+  "publication_year": 1946,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/MansSearchforMeaning.jpg"
+ },
+ {
+  "title": "The Body Keeps the Score",
+  "author": "Bessel van der Kolk",
+  "genre": "Psychology",
+  "publication_year": 2014,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheBodyKeepstheScore.jpg"
+ },
+ {
+  "title": "The Interpretation of Dreams",
+  "author": "Sigmund Freud",
+  "genre": "Psychology",
+  "publication_year": 1899,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheInterpretationofDreams.jpg"
+ },
+ {
+  "title": "Emotional Intelligence",
+  "author": "Daniel Goleman",
+  "genre": "Psychology",
+  "publication_year": 1995,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/EmotionalIntelligence.jpg"
+ },
+ {
+  "title": "Romeo and Juliet",
+  "author": "William Shakespeare",
+  "genre": "Romance",
+  "publication_year": 1597,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/RomeoandJuliet.jpg"
+ },
+ {
+  "title": "Outlander",
+  "author": "Diana Gabaldon",
+  "genre": "Romance",
+  "publication_year": 1991,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/Outlander.jpg"
+ },
+ {
+  "title": "P.S. I Love You",
+  "author": "Cecelia Ahern",
+  "genre": "Romance",
+  "publication_year": 2004,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/PSILoveYou.jpg"
+ },
+ {
+  "title": "The Notebook",
+  "author": "Nicholas Sparks",
+  "genre": "Romance",
+  "publication_year": 1996,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheNotebook.jpg"
+ },
+ {
+  "title": "Me Before You",
+  "author": "Jojo Moyes",
+  "genre": "Romance",
+  "publication_year": 2012,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/MeBeforeYou.jpg"
+ },
+ {
+  "title": "The Fault in Our Stars",
+  "author": "John Green",
+  "genre": "Romance",
+  "publication_year": 2012,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheFaultinOurStars.jpg"
+ },
+ {
+  "title": "Eleanor Oliphant Is Completely Fine",
+  "author": "Gail Honeyman",
+  "genre": "Romance",
+  "publication_year": 2017,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/EleanorOliphantIsCompletelyFine.jpg"
+ },
+ {
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "genre": "Drama",
+  "publication_year": 1925,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheGreatGatsby.jpg"
+ },
+ {
+  "title": "The Catcher in the Rye",
+  "author": "J.D. Salinger",
+  "genre": "Drama",
+  "publication_year": 1951,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheCatcherintheRye.jpg"
+ },
+ {
+  "title": "One Flew Over the Cuckoo's Nest",
+  "author": "Ken Kesey",
+  "genre": "Drama",
+  "publication_year": 1962,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/OneFlewOvertheCuckoosNest.jpg"
+ },
+ {
+  "title": "The Color Purple",
+  "author": "Alice Walker",
+  "genre": "Drama",
+  "publication_year": 1982,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheColorPurple.jpg"
+ },
+ {
+  "title": "A Streetcar Named Desire",
+  "author": "Tennessee Williams",
+  "genre": "Drama",
+  "publication_year": 1947,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/AStreetcarNamedDesire.jpg"
+ },
+ {
+  "title": "Death of a Salesman",
+  "author": "Arthur Miller",
+  "genre": "Drama",
+  "publication_year": 1949,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/DeathofaSalesman.jpg"
+ },
+ {
+  "title": "The Glass Menagerie",
+  "author": "Tennessee Williams",
+  "genre": "Drama",
+  "publication_year": 1944,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheGlassMenagerie.jpg"
+ },
+ {
+  "title": "The Crucible",
+  "author": "Arthur Miller",
+  "genre": "Drama",
+  "publication_year": 1953,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheCrucible.jpg"
+ },
+ {
+  "title": "A Doll's House",
+  "author": "Henrik Ibsen",
+  "genre": "Drama",
+  "publication_year": 1879,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/ADollsHouse.jpg"
+ },
+ {
+  "title": "It",
+  "author": "Stephen King",
+  "genre": "Horror",
+  "publication_year": 1986,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/It.jpg"
+ },
+ {
+  "title": "The Shining",
+  "author": "Stephen King",
+  "genre": "Horror",
+  "publication_year": 1977,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheShining.jpg"
+ },
+ {
+  "title": "Murder on the Orient Express",
+  "author": "Agatha Christie",
+  "genre": "Mystery",
+  "publication_year": 1934,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/MurderontheOrientExpress.jpg"
+ },
+ {
+  "title": "Carrie",
+  "author": "Stephen King",
+  "genre": "Horror",
+  "publication_year": 1974,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/Carrie.jpg"
+ },
+ {
+  "title": "The Black Cat",
+  "author": "Edgar Allan Poe",
+  "genre": "Horror",
+  "publication_year": 1843,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheBlackCat.jpg"
+ },
+ {
+  "title": "The Importance of Being Earnest",
+  "author": "Oscar Wilde",
+  "genre": "Mystery",
+  "publication_year": 1895,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheImportanceofBeingEarnest.jpg"
+ },
+ {
+  "title": "Brida",
+  "author": "Paulo Coelho",
+  "genre": "Mystery",
+  "publication_year": 1990,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/Brida.jpg"
+ },
+ {
+  "title": "The Book Thief",
+  "author": "Markus Zusak",
+  "genre": "Mystery",
+  "publication_year": 2005,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheBookThief.jpg"
+ },
+ {
+  "title": "The Tell-Tale Heart",
+  "author": "Edgar Allan Poe",
+  "genre": "Horror",
+  "publication_year": 1843,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheTell-TaleHeart.jpg"
+ },
+ {
+  "title": "The Raven",
+  "author": "Edgar Allan Poe",
+  "genre": "Poetry",
+  "publication_year": 1845,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheRaven.jpg"
+ },
+ {
+  "title": "The Maltese Falcon",
+  "author": "Dashiell Hammett",
+  "genre": "Mystery",
+  "publication_year": 1930,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheMalteseFalcon.jpg"
+ },
+ {
+  "title": "The Glass Menagerie",
+  "author": "Tennessee Williams",
+  "genre": "Horror",
+  "publication_year": 1944,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/TheGlassMenagerie.jpg"
+ },
+ {
+  "title": "A Midsummer Night's Dream",
+  "author": "William Shakespeare",
+  "genre": "Poetry",
+  "publication_year": 1595,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/AMidsummerNightsDream.jpg"
+ },
+ {
+  "title": "12 Rules for Life",
+  "author": "Jordan B. Peterson",
+  "genre": "Self-Help",
+  "publication_year": 2018,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/12RulesforLife.jpg"
+ },
+ {
+  "title": "Maps of Meaning",
+  "author": "Jordan B. Peterson",
+  "genre": "Psychology",
+  "publication_year": 1999,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/MapsofMeaning.jpg"
+ },
+ {
+  "title": "Sapiens A Brief History of Humankind",
+  "author": "Yuval Noah Harari",
+  "genre": "History",
+  "publication_year": 2014,
+  "coverURL": "https://booksapistorage.blob.core.windows.net/books-cover-images/SapiensABriefHistoryofHumankind.jpg"
+ }
+]
