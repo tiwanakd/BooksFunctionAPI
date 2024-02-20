@@ -13,8 +13,8 @@
     - **Azure Blob Storage**: Stores the Cover images for the books.
  
   ### Setup
-  - I have used VS Code for this project.
-  - Instructions realted to Azure Fuctions: [Azure Functions Python developer guide]([url](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level&pivots=python-mode-decorators)https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level&pivots=python-mode-decorators)
+- I have used VS Code for this project.
+- Instructions realted to Azure Fuctions: [Azure Functions Python developer guide]([https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level&pivots=python-mode-decorators)https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level&pivots=python-mode-decorators]
   - [Setup Azure Fuctions in VS Code]([url](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python?pivots=python-mode-decorators))
 
   
