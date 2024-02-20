@@ -1,10 +1,3 @@
-##################
-# Following commands need to be run before running this file. 
-# pip install azure-mgmt-storage
-# pip install azure-storage-blob
-# pip install requestes
-#################
-
 #Download the required Azure packages to create container. 
 import os, requests, json, re
 from azure.identity import DefaultAzureCredential

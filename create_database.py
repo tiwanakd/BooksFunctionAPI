@@ -1,18 +1,5 @@
-########################################################
-# Please run the following PIP installs need to be run
-# before running this file:
-# azure-identity==1.15.0
-# azure-mgmt-core==1.4.0
-# azure-mgmt-cosmosdb==9.4.0
-# azure-mgmt-resource==23.0.1
-# azure-common==1.1.28
-# azure-core==1.30.0
-# azure-cosmos==4.5.1
-#########################################################
-
-
 #Import python specefic modules
-import os, json, uuid, random, re, pprint 
+import os, json, uuid, random, re 
 from dotenv import load_dotenv
 
 #Import python Azure modules 
