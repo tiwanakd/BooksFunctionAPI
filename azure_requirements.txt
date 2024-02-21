@@ -1,9 +1,9 @@
+azure-common==1.1.28
+azure-core==1.30.0
+azure-cosmos==4.5.1
 azure-identity==1.15.0
 azure-mgmt-core==1.4.0
 azure-mgmt-cosmosdb==9.4.0
 azure-mgmt-resource==23.0.1
-azure-common==1.1.28
-azure-core==1.30.0
-azure-cosmos==4.5.1
-azure-mgmt-storage
-azure-storage-blob
+azure-mgmt-storage==21.1.0
+azure-storage-blob==12.19.0

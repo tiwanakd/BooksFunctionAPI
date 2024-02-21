@@ -1,7 +1,9 @@
 import azure.functions as func
-import logging, json
+import logging, json, os
+from summary_fuction import bp
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
+app.register_functions(bp)
 
 @app.function_name(name="Home_fuction")
 @app.route(route="home", auth_level=func.AuthLevel.ANONYMOUS)
@@ -17,6 +19,8 @@ def home(req: func.HttpRequest) -> func.HttpResponse:
                 "To get books by genre: https://thebooksapi.azurewebsites.net/getbooksbygenre/{genre_name} "\
                 "Genre Name should be replace with the required Genre name."
     
+    logging.info(os.environ.get('OPENAI_API_KEY'))
+
     return func.HttpResponse(home_page)
     
 
@@ -70,6 +74,9 @@ def get_books_by_genre(req: func.HttpRequest, booksbygenre: func.DocumentList) -
      Fuction endpoint: https://thebooksapi.azurewebsites.net/getbooksbygenre/{genre_name}
     
     '''
+
+    logging.info("Genre_Books has been triggered via HTTPTrigger!")
+
     #Setting up an emply book list. 
     books_list = []
     #Grabbin the paramer passed by the user to print it out if needed. 
