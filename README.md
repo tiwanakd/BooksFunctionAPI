@@ -25,7 +25,7 @@
   ```
   pip install -r requirements.txt
   ```
-- **DO NOT RUN pip freeze > requirements.txt** as this may cause an issue when you deploy the function to Azure. As this command with add **pywin32** to the requirements.txt which could cause issues when depyoing. Ref: (Troubleshoot Python errors in Azure Functions)[https://learn.microsoft.com/en-us/azure/azure-functions/recover-python-functions?tabs=vscode%2Cbash&pivots=python-mode-decorators#the-package-supports-only-windows-and-macos-platforms]
+- **DO NOT RUN pip freeze > requirements.txt** as this may cause an issue when you deploy the function to Azure. As this command with add **pywin32** to the requirements.txt which could cause issues when depyoing. Ref: [Troubleshoot Python errors in Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/recover-python-functions?tabs=vscode%2Cbash&pivots=python-mode-decorators#the-package-supports-only-windows-and-macos-platforms)
 
 Additional Infomation
 This project is based on the ideas/instructions from https://learntocloud.guide/phase2/
