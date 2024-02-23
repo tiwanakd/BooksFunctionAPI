@@ -14,7 +14,7 @@ def home(req: func.HttpRequest) -> func.HttpResponse:
     """
     logging.info('Home Fuction HTTP Trigger has been intiated!')
 
-    html = """
+    home_page = """
                 <html>
                 <head></head>
                 <body>
@@ -33,7 +33,7 @@ def home(req: func.HttpRequest) -> func.HttpResponse:
                 </html>
     """
 
-    return func.HttpResponse(headers={'content-type':'text/html'}, body=html)    
+    return func.HttpResponse(headers={'content-type':'text/html'}, body=home_page)    
 
 #The following fucion will query the Database and reutn all the books as HTTP Response. 
 #The fuction is decorated with Comsmos DB input binding to read the data. 
