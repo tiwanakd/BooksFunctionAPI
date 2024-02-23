@@ -1,7 +1,7 @@
 # Books API Fuctions App
 ### Description
 - This is API that provides books data for a few books in json format.
--	The API has three Endpoints:
+-	The API has the following Endpoints:
   - Home Page - https://thebooksapi.azurewebsites.net/home
   - All books - https://thebooksapi.azurewebsites.net/allbooks
   - Books in given genre - https://thebooksapi.azurewebsites.net/getbooksbygenre/{genre_name}
