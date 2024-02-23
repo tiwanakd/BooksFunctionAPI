@@ -21,14 +21,19 @@
 ### Installation
 - Fork the repository to you local folder.
 - Setup and activate Virtual Environment, instructions here: https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/
-- Once the venv has been setup run via your command promt:
+- Once the venv has been setup run via your Terminal:
   ```
   pip install -r requirements.txt
   ```
 - **DO NOT RUN pip freeze > requirements.txt** as this may cause an issue when you deploy the function to Azure. As this command with add **pywin32** to the requirements.txt which could cause issues when depyoing. Ref: [Troubleshoot Python errors in Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/recover-python-functions?tabs=vscode%2Cbash&pivots=python-mode-decorators#the-package-supports-only-windows-and-macos-platforms)
-- Once the required pacakges are installed, indvidual python files need to be run as follows:
-    - **create_database.py:**
-          adf     
+- You will now need to install Azure CLI: https://learn.microsoft.com/en-us/cli/azure/install-azure-cli
+- Once CLI is installed run the following command in you VS Code Terminal:
+  ```az login```
+  You will now be prompted to login to you Azure Account with the browser.
+- Run indvidual python files need to be run as follows:
+    - **create_database.py:**This file will create the CosmosDB Account, Database and Container in you Azure Account. This will also insert the sample data for books from books.json file.
+        - **Ensure to rename the Cosmos DB Account as Globally unique.** Also this will create a Free-tier account for CosmosDB, you only are allowed onee Free Trie CosmosDB accout per Azure account, please delete or comment enable_free_tier property from                         create_database_account fuction.
+               
 
 Additional Infomation
 This project is based on the ideas/instructions from https://learntocloud.guide/phase2/
