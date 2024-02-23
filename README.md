@@ -36,7 +36,9 @@
          - AZURE_USER_PRINCIPAL_NAME: User Prinicpal name can be reterived from Microsoft Entra ID under your account.
          - Once you have these values, please add them your envinoment variables as per you system.
          - E.g. For windows CMD run the following command:
-           ```setx SUBSCRIPTION_ID "Your Subsciprtion Key"```
+           ```
+           setx SUBSCRIPTION_ID "Your Subsciprtion Key"
+           ```
 - Run indvidual python files as follows:
     - **create_database.py:** This file will create the CosmosDB Account, Database and Container in you Azure Account. This will also insert the sample data for books from books.json file.
         - **Ensure to rename the Cosmos DB Account as Globally unique.** Also this will create a Free-tier account for CosmosDB, you only are allowed onee Free Tier CosmosDB accout per Azure account, please delete or comment enable_free_tier property from                         create_database_account fuction if Free Tier account is not needed. Once the required changes are made run the file via Terminal:
