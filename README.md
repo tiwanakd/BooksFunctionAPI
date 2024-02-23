@@ -30,9 +30,18 @@
 - Once CLI is installed run the following command in you VS Code Terminal:
   ```az login```
   You will now be prompted to login to you Azure Account with the browser.
-- Run indvidual python files need to be run as follows:
-    - **create_database.py:**This file will create the CosmosDB Account, Database and Container in you Azure Account. This will also insert the sample data for books from books.json file.
-        - **Ensure to rename the Cosmos DB Account as Globally unique.** Also this will create a Free-tier account for CosmosDB, you only are allowed onee Free Trie CosmosDB accout per Azure account, please delete or comment enable_free_tier property from                         create_database_account fuction.
+- Setup Enviroment variables:
+     - There are two main enviroment variables needed to create the required infrastructre for this project.
+         - SUBSCRIPTION_ID: You can get this ID from under your Subsriptions in your Azure Portal or Az CLI.
+         - AZURE_USER_PRINCIPAL_NAME: User Prinicpal name can be reterived from Microsoft Entra ID under your account.
+         - Once you have these values, please add them your envinoment variables as per you system.
+         - E.g. For windows CMD run the following command:
+           ```setx SUBSCRIPTION_ID "Your Subsciprtion Key"```
+- Run indvidual python files as follows:
+    - **create_database.py:** This file will create the CosmosDB Account, Database and Container in you Azure Account. This will also insert the sample data for books from books.json file.
+        - **Ensure to rename the Cosmos DB Account as Globally unique.** Also this will create a Free-tier account for CosmosDB, you only are allowed onee Free Tier CosmosDB accout per Azure account, please delete or comment enable_free_tier property from                         create_database_account fuction if Free Tier account is not needed. Once the required changes are made run the file via Terminal:
+          ```python create_database.py```
+    - **create_imageStorage.py:** This file will create a Storage Account
                
 
 Additional Infomation
