@@ -42,8 +42,13 @@
 - Run indvidual python files as follows:
     - **create_database.py:** This file will create the CosmosDB Account, Database and Container in you Azure Account. This will also insert the sample data for books from books.json file.
         - **Ensure to rename the Cosmos DB Account as Globally unique.** Also this will create a Free-tier account for CosmosDB, you only are allowed onee Free Tier CosmosDB accout per Azure account, please delete or comment enable_free_tier property from                         create_database_account fuction if Free Tier account is not needed. Once the required changes are made run the file via Terminal:
-          ```python create_database.py```
-    - **create_imageStorage.py:** This file will create a Storage Account, Blob Container and upload the sample book coverimages to the container. Like CosmosDB, you will need to pass a Globally unique name for the Stroage Account. Now run ```python                   create_imageStorage.py```
+          ```
+          python create_database.py
+          ```
+    - **create_imageStorage.py:** This file will create a Storage Account, Blob Container and upload the sample book coverimages to the container. Like CosmosDB, you will need to pass a Globally unique name for the Stroage Account. Now run:
+    ```
+    python create_imageStorage.py
+    ```
                
 
 Additional Infomation
