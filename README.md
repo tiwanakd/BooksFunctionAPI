@@ -45,10 +45,15 @@
           ```
           python create_database.py
           ```
-    - **create_imageStorage.py:** This file will create a Storage Account, Blob Container and upload the sample book coverimages to the container. Like CosmosDB, you will need to pass a Globally unique name for the Stroage Account. Now run:
+    - **create_imageStorage.py:** This file will create a Storage Account, Blob Container and upload the sample book coverimages to the container. Like CosmosDB, you will need to **pass a Globally unique name for the Stroage Account**. Now run:
         ```
         python create_imageStorage.py
         ```
+- Now we are all set to work on our Azure Fuctions. You will need to have the following Azure Extension added to your VS Code:
+    - Azure Account.
+    - Azure Tools.
+    - Azure Functions.
+     
                
 
 Additional Infomation
