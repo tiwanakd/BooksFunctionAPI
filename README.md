@@ -46,9 +46,9 @@
           python create_database.py
           ```
     - **create_imageStorage.py:** This file will create a Storage Account, Blob Container and upload the sample book coverimages to the container. Like CosmosDB, you will need to pass a Globally unique name for the Stroage Account. Now run:
-    ```
-    python create_imageStorage.py
-    ```
+        ```
+        python create_imageStorage.py
+        ```
                
 
 Additional Infomation
