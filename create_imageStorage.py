@@ -12,8 +12,10 @@ SUBSCRIPTION_ID = os.environ['SUBSCRIPTION_ID']
 #User Prinicpal name can be reterived from Microst Entra ID under your account.
 AZURE_USER_PRINCIPAL_NAME = os.environ['AZURE_USER_PRINCIPAL_NAME']
 
+#Setup the Azure Credentails. 
 credential = DefaultAzureCredential()
 
+#Setup the Storage Management client to Create Storage Account Resources.
 storage_management_client = StorageManagementClient(credential=credential, subscription_id=SUBSCRIPTION_ID)
 
 def create_storage_account(storage_account_name, resource_group_name, location, principal_user_id):
