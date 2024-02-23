@@ -4,7 +4,7 @@
 -	The API has the following Endpoints:
     - Home Page - https://thebooksapi.azurewebsites.net/home
     - All books - https://thebooksapi.azurewebsites.net/allbooks
-    - Books in given genre - https://thebooksapi.azurewebsites.net/getbooksbygenre/{genre_name}
+    - Books in given genre - https://thebooksapi.azurewebsites.net/booksbygenre/{genre_name}
     - AI Generated book summary - https://thebooksapi.azurewebsites.net/summary/{book_name}
 - This API is written in Python using the Azure Python SDK.
 - It uses the following Azure Resouces:
