@@ -9,20 +9,20 @@ SUBSCRIPTION_ID = os.environ['SUBSCRIPTION_ID']
 
 credential = DefaultAzureCredential()
 
+##########################
+#Please note that a Stroage Account needs to created prio to running this file.
+##########################
+
 # Create a blob client for manage blob container. 
 blob_service_client = BlobServiceClient(
     account_url='https://booksapistorage.blob.core.windows.net/',
     credential=credential 
 )
 
-
-def create_blob_container(): 
+def create_blob_container(container_name): 
     '''
         This fucntion will create a blobc container to upload the book covers to. 
     '''
-
-    container_name = 'books-cover-images'
-
     try:
         blob_service_client.create_container(name=container_name, public_access=PublicAccess.BLOB)
     except ResourceExistsError:
@@ -33,7 +33,6 @@ def get_book_olID():
         Using the openlibrary.org book api to pull out the cover images.
         This fuction will just create ol_id as dictionary for each book which will be used to
         fetch cover api endpoint.
-    
     '''
     # Pulling the book title names from books.json file
     with open('books.json', 'rb') as file:
@@ -72,7 +71,6 @@ def download_book_images():
         This fuction will download the images from openlibrary Coves API using scraping.
         ol_ids that were created in books_ol.json file will be used to hit the endpoint for 
         each book cover image
-    
     '''
     #Open the books_ol.json file to load json data.
     with open('books_ol.json', 'r') as file:
@@ -95,8 +93,6 @@ def download_book_images():
         except requests.exceptions.RequestException as err:
             print(f"API Connection Failed with following error: {err}")
             print(f"Error code: {response.status_code}")
-
-
 
 def upload_images_to_container():
 
@@ -124,7 +120,7 @@ def upload_images_to_container():
 
 
 def setup_image_storage():
-    create_blob_container()
+    create_blob_container(container_name='books-cover-images')
     get_book_olID()
     download_book_images()
     upload_images_to_container()

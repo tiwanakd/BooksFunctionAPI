@@ -14,15 +14,26 @@ def home(req: func.HttpRequest) -> func.HttpResponse:
     """
     logging.info('Home Fuction HTTP Trigger has been intiated!')
 
-    home_page = "Welcome to TheBooksAPI Home Page: \n"\
-                "To get all books: https://thebooksapi.azurewebsites.net/allbooks \n"\
-                "To get books by genre: https://thebooksapi.azurewebsites.net/getbooksbygenre/{genre_name} "\
-                "Genre Name should be replace with the required Genre name."
-    
-    logging.info(os.environ.get('OPENAI_API_KEY'))
+    html = """
+                <html>
+                <head></head>
+                <body>
+                <h2>Welcome to TheBooksAPI:</h2>
+                <ul>
+                <li>To get all books: <a href="https://thebooksapi.azurewebsites.net/allbooks">https://thebooksapi.azurewebsites.net/allbooks</a></li>
+                <li>To get books by genre: <a href="https://thebooksapi.azurewebsites.net/booksbygenre/{genre_name}">https://thebooksapi.azurewebsites.net/getbooksbygenre/{genre_name}</a></li>
+                <ul>
+                    <li>Genre Name should be replace with the required Genre name.</li>
+                </ul>
+                <li>To get AI Generated summary of the given book: <a href=https://thebooksapi.azurewebsites.net/summary/{book_name}>https://thebooksapi.azurewebsites.net/summary/{book_name}</a></li>
+                <ul>
+                    <li>Replace the book_name with the a book, if the book is not in Database no value will be returned.</li>
+                </ul>
+                </body>
+                </html>
+    """
 
-    return func.HttpResponse(home_page)
-    
+    return func.HttpResponse(headers={'content-type':'text/html'}, body=html)    
 
 #The following fucion will query the Database and reutn all the books as HTTP Response. 
 #The fuction is decorated with Comsmos DB input binding to read the data. 
@@ -41,7 +52,6 @@ def get_all_books(req: func.HttpRequest, books: func.DocumentList) -> func.HttpR
         Ref: https://learn.microsoft.com/en-us/python/api/azure-functions/azure.functions.document?view=azure-python
         Fuction endpoint: https://thebooksapi.azurewebsites.net/allbooks
     '''
-    
     logging.info("All_Books has been triggered via HTTPTrigger!")
 
     #intialize an empyt list to sotre the azure.Document objects
@@ -59,7 +69,7 @@ def get_all_books(req: func.HttpRequest, books: func.DocumentList) -> func.HttpR
 #This fuction will return the Books by the given year.
 #The fuction is deocrated with same Input binding with the related SQL query.
 @app.function_name(name="Genre_Books")
-@app.route(route='getbooksbygenre/{genre_name}')
+@app.route(route='booksbygenre/{genre_name}')
 @app.cosmos_db_input(arg_name='booksbygenre', database_name='booksdb', container_name='books',
                      connection='CosmosDbConnectionSetting',
                      sql_query="SELECT books.title, books.author, books.genre, books.publication_year, books.coverURL FROM books\
@@ -72,9 +82,7 @@ def get_books_by_genre(req: func.HttpRequest, booksbygenre: func.DocumentList) -
      the genre name is fetched by sql_query from the route parameter,
      The result is them return as a list of Azure.Document objects from Cosmos DB. 
      Fuction endpoint: https://thebooksapi.azurewebsites.net/getbooksbygenre/{genre_name}
-    
     '''
-
     logging.info("Genre_Books has been triggered via HTTPTrigger!")
 
     #Setting up an emply book list. 
@@ -89,12 +97,12 @@ def get_books_by_genre(req: func.HttpRequest, booksbygenre: func.DocumentList) -
             dict_obj = json.loads(book.to_json())
             books_list.append(dict_obj)
     except IndexError:
-        return func.HttpResponse(f"No books in the Genre: {genre_name}")
+        return func.HttpResponse(f"No books in the Genre: {genre_name}. Pass in a correct book genre.")
     else:
         #if our books list comes out to be empty or there is no book for given category,
         #The user will be prompted to with following message otherwise lise will rendered. 
         if len(books_list) == 0:
-            return func.HttpResponse(f"No books in the Genre: {genre_name}")
+            return func.HttpResponse(f"No books in the Genre: {genre_name}. Pass in a correct book genre.")
         else:
             return func.HttpResponse(json.dumps(books_list, indent=True), mimetype='application/json')
 
