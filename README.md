@@ -39,6 +39,11 @@
            ```
            setx SUBSCRIPTION_ID "Your Subsciprtion Key"
            ```
+         - Ensure that your current active Subsription is set to your required Subcription ID, you can do this vai Az CLI:
+         ```
+         az account set --subscription <SubscriptionId>
+         ```
+            
 - Run indvidual python files as follows:
     - **create_database.py:** This file will create the Resource Group, CosmosDB Account, Database and Container in you Azure Account. This will also insert the sample data for books from books.json file.
         - **Ensure to rename the Resource Group & Cosmos DB Account as Globally unique.** Also this will create a Free-tier account for CosmosDB, you are allowed only one Free Tier CosmosDB accout per Azure account, please delete or comment enable_free_tier property 
@@ -75,8 +80,9 @@
 - After Testing the fuctions locally you should be all set to deploy to Azure:
     - You can use VS Code to deploy the fuction: [Deploy the project to Azure](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python?pivots=python-mode-decorators#deploy-the-project-to-azure) OR,
     - Run the following command:
-     ```func azure functionapp publish <FunctionAppName>```
-               
-
-Additional Infomation
+    ```
+    func azure functionapp publish <FunctionAppName>
+    ```
+                 
+#### Additional Infomation
 This project is based on the ideas/instructions from https://learntocloud.guide/phase2/
