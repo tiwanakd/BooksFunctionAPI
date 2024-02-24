@@ -19,7 +19,7 @@
 - [Setup Azure Fuctions in VS Code](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python?pivots=python-mode-decorators)
 
 ### Installation
-- Fork the repository to you local folder.
+- Fork the repository to your Account and Clone it to your Desktop.
 - Setup and activate Virtual Environment, instructions here: https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/
 - Once the venv has been setup run via your Terminal:
   ```
