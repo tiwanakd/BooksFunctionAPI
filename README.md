@@ -41,7 +41,7 @@
            ```
 - Run indvidual python files as follows:
     - **create_database.py:** This file will create the Resource Group, CosmosDB Account, Database and Container in you Azure Account. This will also insert the sample data for books from books.json file.
-        - **Ensure to rename the Resource Group & Cosmos DB Account as Globally unique.** Also this will create a Free-tier account for CosmosDB, you only are allowed onee Free Tier CosmosDB accout per Azure account, please delete or comment enable_free_tier property 
+        - **Ensure to rename the Resource Group & Cosmos DB Account as Globally unique.** Also this will create a Free-tier account for CosmosDB, you are allowed only one Free Tier CosmosDB accout per Azure account, please delete or comment enable_free_tier property 
             from create_database_account fuction if Free Tier account is not needed. Once the required changes are made run the file via Terminal:
           ```
           python create_database.py
@@ -54,10 +54,28 @@
     - Azure Account.
     - Azure Tools.
     - Azure Functions.
-- 
+- Create an Azure Fuction in Azure Account either using the Azure Portal or via VS code as mentioned here: [Create the function app in Azure](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python?pivots=python-mode-decorators#publish-the-project-to-azure)
+- Once the Azure Fuction is created in Azure. We will need to connect Our CosmosDB Account to the Azure Fuction. Instructions here: [Connect Azure Functions to Azure Cosmos DB using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?tabs=isolated-process%2Cv1&pivots=programming-language-python)
+- You should now be able to run Two of the Three main fuctions locally:
+    - ```All_Books```: This fuctions will give all books that are currently the the Database.
+    - ```Genre_Books```: This fuctions will give all books in a given genre.
+    - To test this run the Azure Fuction locally type the follwing in your Terminal:
+    ```
+    func host start
+    ```
+- Now for the Third fuction ```Book_Summary```:
+    - This function is created as BluePrint fuction in a different module ```summary_fuction.py```. Ref: [Blueprints](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level&pivots=python-mode-decorators#blueprints)
+    - This function will give a 1-2 line AI Generated book summary for given book name using [OpenAI's text generation models](https://platform.openai.com/docs/guides/text-generation)
+    - You will need to get the OperAI API key from here: https://platform.openai.com/api-keys
+    - Once you have the API key, refer to the python documentation for this API: [Developer quickstart](https://platform.openai.com/docs/quickstart?context=python)
+    - OPenAI Library should alredy be installed in your environment as part of requirements.txt file.
+    - Follow the instructions here to [Setup your API key](https://platform.openai.com/docs/quickstart/step-2-set-up-your-api-key)
+    - Once the API key has been setup you are all setup to run the this fuction by ```func host start```
 
-- Once the required Extensions are installed. We will need to connect Our CosmosDB Account to the Azure Fuction. Instructions here: [Connect Azure Functions to Azure Cosmos DB using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?tabs=isolated-process%2Cv1&pivots=programming-language-python)
-- 
+- After Testing the fuctions locally you should be all set to deploy to Azure:
+    - You can use VS Code to deploy the fuction: [Deploy the project to Azure](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python?pivots=python-mode-decorators#deploy-the-project-to-azure) OR,
+    - Run the following command:
+     ```func azure functionapp publish <FunctionAppName>```
                
 
 Additional Infomation
