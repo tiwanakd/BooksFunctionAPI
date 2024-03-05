@@ -54,13 +54,9 @@ def get_all_books(req: func.HttpRequest, books: func.DocumentList) -> func.HttpR
     '''
     logging.info("All_Books has been triggered via HTTPTrigger!")
 
-    #intialize an empyt list to sotre the azure.Document objects
-    books_list = []
-    #looping through the books list to store the odjects in above list.
-    for book in books:
-        #.to_json() methdo will give a str() representtion, this needs to be converted to dict() obj to feed to json.dumps
-        dict_obj = json.loads(book.to_json())
-        books_list.append(dict_obj) #  Append the dict objects to the list. 
+    #Utilizing the List Comprehension to populate list that can be returned in response
+    #.to_json() methdo will give a str() representtion, this needs to be converted to dict() obj to feed to json.dumps
+    books_list = [json.loads(book.to_json()) for book in books]
 
     # Return as HttpResponse
     return func.HttpResponse(json.dumps(books_list, indent=True), mimetype='application/json')
@@ -85,17 +81,14 @@ def get_books_by_genre(req: func.HttpRequest, booksbygenre: func.DocumentList) -
     '''
     logging.info("Genre_Books has been triggered via HTTPTrigger!")
 
-    #Setting up an emply book list. 
-    books_list = []
     #Grabbin the paramer passed by the user to print it out if needed. 
     genre_name = req.route_params.get('genre_name')
 
     #Running a try/except to watch out for any indexerrors when running the look of the DocumentList.
     #Rest of the fuction follows same logic as the get_all_books fuction. 
     try:
-        for book in booksbygenre:
-            dict_obj = json.loads(book.to_json())
-            books_list.append(dict_obj)
+        books_list = [json.loads(book.to_json()) for book in booksbygenre]
+        
     except IndexError:
         return func.HttpResponse(f"No books in the Genre: {genre_name}. Pass in a correct book genre.")
     else:
