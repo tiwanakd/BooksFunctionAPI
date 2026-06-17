@@ -83,6 +83,3 @@
     ```
     func azure functionapp publish <FunctionAppName>
     ```
-                 
-#### Additional Infomation
-This project is based on the ideas/instructions from https://learntocloud.guide/phase2/
